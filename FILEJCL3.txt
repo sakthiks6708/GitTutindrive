@@ -10,5 +10,3 @@
 //  DCB=(DSORG=PS,LRECL=12,RECFM=FB,BLKSIZE=0)                          00100002
 //                                                                      00110000
 
-// adding one new line in FILEJCL3 in Branch2
-adding one new line in FILEJCL3 in Branch1
