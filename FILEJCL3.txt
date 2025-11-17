@@ -1,0 +1,13 @@
+//IBMUSERX JOB NOTIFY=&SYSUID                                           00010000
+//STEP1  EXEC PGM=FILEPGM3                                              00020000
+//STEPLIB  DD DSN=IBMUSER.T6.LOAD,DISP=SHR                              00030000
+//SYSPRINT DD SYSOUT=*                                                  00040000
+//SYSOUT   DD SYSOUT=*                                                  00050000
+//TRANDD01 DD DSN=IBMUSER.T6.TRAN.DETAIL,DISP=SHR                       00060000
+//TRANDD02 DD DSN=IBMUSER.T6.TRAN.SUMRY,DISP=(NEW,CATLG,DELETE),        00070002
+//  UNIT=3390,VOL=SER=JASYS1,                                           00080001
+//  SPACE=(TRK,(1,1),RLSE),                                             00090000
+//  DCB=(DSORG=PS,LRECL=12,RECFM=FB,BLKSIZE=0)                          00100002
+//                                                                      00110000
+
+adding one new line in FILEJCL3 in Branch1
